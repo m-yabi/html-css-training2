@@ -1,1 +1,50 @@
 @import "_settings.scss";
+.container {
+  @include pc {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+.header-list {
+  @include pc {
+    margin-top: 28px;
+    margin-bottom: 26px;
+    margin-left: 91px;
+    display: flex;
+    align-items: center;
+  }
+}
+.header-logo {
+  @include pc {
+    max-width: 100px;
+    height: 25px;
+    margin-right: 60px;
+  }
+  @include sp {
+    max-width: 80px;
+    height: 20px;
+  }
+}
+.menu {
+  font-size: 14px;
+  @include pc {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu-list:not(:last-child) {
+  margin-right: 30px;
+}
+.inquiry {
+  margin-left: auto;
+  margin-right: calc(55% - 50vw);
+  height: 80px;
+  background-color: black;
+  color: white;
+  padding: 31px 76px;
+  font-size: 12px;
+}
+.main-visual {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
