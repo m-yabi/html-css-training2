@@ -125,4 +125,19 @@ img {
 .main-visual {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  height: 600px;
+}
+.main-visual img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper-title {
+  width: 140px;
+}
+.wrapper-title .tetle {
+  font-size: 36px;
+  text-align: left;
+  letter-spacing: 10.8px;
 }/*# sourceMappingURL=WED.css.map */

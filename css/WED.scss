@@ -47,4 +47,17 @@
 .main-visual {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  height: 600px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.wrapper-title {
+  width: 140px;
+  .tetle {
+    font-size: 36px;
+    text-align: left;
+    letter-spacing: 10.8px;
+  }
 }
