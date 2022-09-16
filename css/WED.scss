@@ -7,11 +7,11 @@
 }
 .header-list {
   @include pc {
-    margin-top: 28px;
-    margin-bottom: 26px;
-    margin-left: 91px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding-left: 100px;
   }
 }
 .header-logo {
@@ -37,17 +37,18 @@
 }
 .inquiry {
   margin-left: auto;
-  margin-right: calc(55% - 50vw);
+  margin-right: calc(53% - 50vw);
+  max-width: 200px;
   height: 80px;
   background-color: black;
   color: white;
-  padding: 31px 76px;
+  padding: 31px 60px;
   font-size: 12px;
 }
 .main-visual {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
-  height: 600px;
+  height: 900px;
   img {
     height: 100%;
     object-fit: cover;
