@@ -62,3 +62,16 @@
     letter-spacing: 10.8px;
   }
 }
+.border {
+  position: relative;
+}
+.border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%; /* 位置調整 */
+  transform: translate(-50%); /* 位置調整 */
+  bottom: -10px; /* 下線の上下位置調整 */
+  width: 30px; /* 下線の幅 */
+  height: 2px; /* 下線の太さ */
+}
