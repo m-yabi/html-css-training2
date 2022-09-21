@@ -208,13 +208,17 @@ span {
 .ABOUT__flex {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
+.ABOUT_image {
+  margin-bottom: 246px;
+  margin-right: 70px;
+}
 .ABOUT_image img {
-  display: block;
   width: 100%;
   height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .ABOUT__wrapper-text {
@@ -227,4 +231,31 @@ span {
   margin-right: 89px;
   font-size: 14px;
   line-height: 30px;
+}
+
+.business__list {
+  margin-right: calc(80% - 50vw);
+  margin-left: calc(80% - 50vw);
+  display: flex;
+}
+
+.flex-left {
+  width: 48%;
+  margin-right: 64px;
+  margin-top: 150px;
+}
+
+.flex-right {
+  margin-top: 50px;
+  width: 48%;
+}
+
+.sec-name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sec-image:not(:last-child) {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=WED.css.map */
