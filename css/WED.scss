@@ -82,7 +82,12 @@ main {
   background-color: #f0f0f0;
 }
 .NEWS__wrapper {
-  padding: 120px 0px;
+  @include pc {
+    padding: 120px 0px;
+  }
+  @include sp {
+    padding-top: 80px;
+  }
 }
 .tetle {
   width: 140px;
@@ -107,13 +112,20 @@ main {
   display: flex;
 }
 .NEWS__list {
-  display: flex;
-  li:not(:last-child) {
-    padding-right: 70px;
-    border-right: 1px solid black;
+  @include pc {
+    display: flex;
+    li:not(:last-child) {
+      padding-right: 70px;
+      border-right: 1px solid black;
+    }
+    li:not(:first-child) {
+      margin-left: 20px;
+    }
   }
-  li:not(:first-child) {
-    margin-left: 20px;
+  @include sp {
+    li:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }
 time {
@@ -134,31 +146,61 @@ span {
   font-size: 16px;
 }
 .ABOUT__wrapper {
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
+  @include pc {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+  }
+  @include sp {
+    margin-top: 90px;
+  }
 }
+
 .ABOUT__flex {
-  display: flex;
-  justify-content: space-between;
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .ABOUT_image {
-  margin-bottom: 246px;
-  margin-right: 70px;
-  img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  @include pc {
+    margin-bottom: 246px;
+    margin-right: 70px;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  @include sp {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    height: 300px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 .ABOUT__wrapper-text {
-  width: 40%;
-  padding-top: 150px;
+  @include pc {
+    width: 40%;
+    padding-top: 150px;
+  }
+  @include sp {
+    margin-top: 30px;
+  }
 }
 .ABOUT__text {
-  margin-top: 86px;
-  margin-right: 89px;
-  font-size: 14px;
-  line-height: 30px;
+  @include pc {
+    margin-top: 86px;
+    margin-right: 89px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @include sp {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
 }
 .business__list {
   margin-right: calc(80% - 50vw);
