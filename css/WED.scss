@@ -4,6 +4,15 @@
     max-width: 1000px;
     margin: auto;
   }
+  @include sp {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+header {
+  @include sp {
+    background-color: #f0f0f0;
+  }
 }
 .header-list {
   @include pc {
@@ -23,32 +32,47 @@
   @include sp {
     max-width: 80px;
     height: 20px;
+    padding-top: 16px;
+    margin-left: 16px;
   }
 }
 .menu {
   font-size: 14px;
-  @include pc {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  @include sp {
+    margin-top: 23.5px;
+    margin-left: 16px;
+    margin-bottom: 15px;
   }
 }
 .menu-list:not(:last-child) {
   margin-right: 30px;
 }
 .inquiry {
-  margin-left: auto;
-  margin-right: calc(53% - 50vw);
-  max-width: 200px;
-  height: 80px;
-  background-color: black;
-  color: white;
-  padding: 31px 60px;
-  font-size: 12px;
+  @include pc {
+    margin-left: auto;
+    margin-right: calc(53% - 50vw);
+    max-width: 200px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    padding: 31px 60px;
+    font-size: 12px;
+  }
+  @include sp {
+    display: none;
+  }
 }
 .main-visual {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
-  height: 900px;
+  @include pc {
+    height: 900px;
+  }
+  @include sp {
+    height: 600px;
+  }
   img {
     height: 100%;
     object-fit: cover;
