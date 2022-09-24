@@ -314,19 +314,34 @@ span {
   }
 }
 .footer {
-  display: flex;
-  justify-content: space-between;
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer-logo {
-  max-width: 100px;
-  height: 25px;
-  margin-top: 80px;
-  margin-right: 60px;
+  @include pc {
+    max-width: 100px;
+    height: 25px;
+    margin-top: 80px;
+    margin-right: 60px;
+  }
+  @include sp {
+    max-width: 80px;
+    height: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
 }
 .adress {
-  margin-top: 40px;
-  margin-bottom: 64px;
   font-size: 14px;
+  @include pc {
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
+  @include sp {
+    margin-bottom: 40px;
+  }
 }
 .small {
   font-size: 12px;
