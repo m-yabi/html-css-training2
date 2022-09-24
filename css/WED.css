@@ -142,10 +142,17 @@ img {
     font-size: 12px;
   }
 }
+.inquiry a {
+  display: block;
+}
 @media (max-width: 750px) {
   .inquiry {
     display: none;
   }
+}
+
+.inquiry:hover {
+  opacity: 0.8;
 }
 
 .main-visual {

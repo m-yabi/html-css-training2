@@ -60,9 +60,15 @@ header {
     padding: 31px 60px;
     font-size: 12px;
   }
+  a {
+    display: block;
+  }
   @include sp {
     display: none;
   }
+}
+.inquiry:hover {
+  opacity: 0.8;
 }
 .main-visual {
   margin-right: calc(50% - 50vw);
