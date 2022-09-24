@@ -1,4 +1,8 @@
 @import "_settings.scss";
+header,
+main {
+  background-color: #f0f0f0;
+}
 .container {
   @include pc {
     max-width: 1000px;
@@ -9,17 +13,12 @@
     margin-right: 16px;
   }
 }
-header {
-  @include sp {
-    background-color: #f0f0f0;
-  }
-}
+
 .header-list {
   @include pc {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
     padding-left: 100px;
   }
 }
@@ -52,16 +51,15 @@ header {
 .inquiry {
   @include pc {
     margin-left: auto;
-    margin-right: calc(53% - 50vw);
     max-width: 200px;
     height: 80px;
     background-color: black;
     color: white;
-    padding: 31px 60px;
     font-size: 12px;
   }
   a {
     display: block;
+    padding: 31px 60px;
   }
   @include sp {
     display: none;
@@ -84,6 +82,54 @@ header {
     object-fit: cover;
   }
 }
+.contact__wrapper {
+  padding-top: 80px;
+}
+.contact-form {
+  max-width: 1000px;
+  font-size: 14px;
+}
+.contact-text {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.astarisk {
+  color: red;
+  background-color: #f0f0f0;
+}
+label {
+  margin-bottom: 5px;
+}
+input {
+  height: 50px;
+}
+label,
+input {
+  display: block;
+  width: 100%;
+}
+input,
+textarea {
+  background-color: #FFFFFF
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+textarea {
+  height: 180px;
+}
+.btn {
+  padding-bottom: 120px;
+}
+.bottun {
+  max-width: 100px;
+  height: 43px;
+  margin: auto;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px black solid;
+  padding-left: initial;
+}
 main {
   background-color: #f0f0f0;
 }
@@ -95,7 +141,7 @@ main {
     padding-top: 80px;
   }
 }
-.tetle {
+.title {
   width: 140px;
   font-size: 36px;
   text-align: left;
@@ -151,8 +197,15 @@ span {
   margin-top: 16px;
   font-size: 16px;
 }
+.ABOUT {
+  &__wrapper {
+  }
+  &__flex {
+  }
+}
 .ABOUT__wrapper {
   @include pc {
+    max-width: 1400px;
     margin-right: calc(50% - 50vw);
     margin-left: calc(50% - 50vw);
   }
@@ -164,11 +217,11 @@ span {
 .ABOUT__flex {
   @include pc {
     display: flex;
-    justify-content: space-between;
   }
 }
 .ABOUT_image {
   @include pc {
+    max-width: 55%;
     margin-bottom: 246px;
     margin-right: 70px;
     img {
@@ -189,8 +242,8 @@ span {
 }
 .ABOUT__wrapper-text {
   @include pc {
-    width: 40%;
-    padding-top: 150px;
+    width: 45%;
+    padding-top: 150px 5% 0 5%;
   }
   @include sp {
     margin-top: 30px;
@@ -210,9 +263,8 @@ span {
 }
 .business__list {
   @include pc {
-    margin-right: calc(80% - 50vw);
-    margin-left: calc(80% - 50vw);
     display: flex;
+    padding: 0 100px;
   }
 }
 .flex-left {
@@ -251,6 +303,7 @@ span {
   @include pc {
     margin-top: 120px;
     display: flex;
+    position: relative;
   }
   @include sp {
     margin-top: 80px;
@@ -259,9 +312,9 @@ span {
 .company-info {
   @include pc {
     width: 55%;
+    max-width: 567px;
     height: 640px;
     background-color: #ffffff;
-    position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 60px;
@@ -276,6 +329,7 @@ span {
   margin-top: 86px;
   font-size: 14px;
   @include pc {
+    max-width: 365px;
     dl {
       display: flex;
       flex-wrap: wrap;
@@ -310,9 +364,10 @@ span {
     object-fit: cover;
   }
   @include pc {
+    width: 53%;
     max-width: 547px;
     position: absolute;
-    right: 200px;
+    right: 0px;
     margin-top: 120px;
   }
   @include sp {
@@ -330,7 +385,6 @@ span {
     max-width: 100px;
     height: 25px;
     margin-top: 80px;
-    margin-right: 60px;
   }
   @include sp {
     max-width: 80px;

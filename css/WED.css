@@ -68,6 +68,11 @@ img {
   vertical-align: top;
 }
 
+header,
+main {
+  background-color: #f0f0f0;
+}
+
 @media (min-width: 751px) {
   .container {
     max-width: 1000px;
@@ -81,18 +86,11 @@ img {
   }
 }
 
-@media (max-width: 750px) {
-  header {
-    background-color: #f0f0f0;
-  }
-}
-
 @media (min-width: 751px) {
   .header-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
     padding-left: 100px;
   }
 }
@@ -133,17 +131,16 @@ img {
 @media (min-width: 751px) {
   .inquiry {
     margin-left: auto;
-    margin-right: calc(53% - 50vw);
     max-width: 200px;
     height: 80px;
     background-color: black;
     color: white;
-    padding: 31px 60px;
     font-size: 12px;
   }
 }
 .inquiry a {
   display: block;
+  padding: 31px 60px;
 }
 @media (max-width: 750px) {
   .inquiry {
@@ -175,6 +172,65 @@ img {
      object-fit: cover;
 }
 
+.contact__wrapper {
+  padding-top: 80px;
+}
+
+.contact-form {
+  max-width: 1000px;
+  font-size: 14px;
+}
+
+.contact-text {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.astarisk {
+  color: red;
+  background-color: #f0f0f0;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  height: 50px;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+textarea {
+  height: 180px;
+}
+
+.btn {
+  padding-bottom: 120px;
+}
+
+.bottun {
+  max-width: 100px;
+  height: 43px;
+  margin: auto;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px black solid;
+  padding-left: initial;
+}
+
 main {
   background-color: #f0f0f0;
 }
@@ -190,7 +246,7 @@ main {
   }
 }
 
-.tetle {
+.title {
   width: 140px;
   font-size: 36px;
   text-align: left;
@@ -256,6 +312,7 @@ span {
 
 @media (min-width: 751px) {
   .ABOUT__wrapper {
+    max-width: 1400px;
     margin-right: calc(50% - 50vw);
     margin-left: calc(50% - 50vw);
   }
@@ -269,12 +326,12 @@ span {
 @media (min-width: 751px) {
   .ABOUT__flex {
     display: flex;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: 751px) {
   .ABOUT_image {
+    max-width: 55%;
     margin-bottom: 246px;
     margin-right: 70px;
   }
@@ -300,8 +357,8 @@ span {
 
 @media (min-width: 751px) {
   .ABOUT__wrapper-text {
-    width: 40%;
-    padding-top: 150px;
+    width: 45%;
+    padding-top: 150px 5% 0 5%;
   }
 }
 @media (max-width: 750px) {
@@ -327,9 +384,8 @@ span {
 
 @media (min-width: 751px) {
   .business__list {
-    margin-right: calc(80% - 50vw);
-    margin-left: calc(80% - 50vw);
     display: flex;
+    padding: 0 100px;
   }
 }
 
@@ -376,6 +432,7 @@ span {
   .COMPANY__wrapper {
     margin-top: 120px;
     display: flex;
+    position: relative;
   }
 }
 @media (max-width: 750px) {
@@ -387,9 +444,9 @@ span {
 @media (min-width: 751px) {
   .company-info {
     width: 55%;
+    max-width: 567px;
     height: 640px;
     background-color: #ffffff;
-    position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 60px;
@@ -408,6 +465,9 @@ span {
   font-size: 14px;
 }
 @media (min-width: 751px) {
+  .wrapper-text {
+    max-width: 365px;
+  }
   .wrapper-text dl {
     display: flex;
     flex-wrap: wrap;
@@ -445,9 +505,10 @@ span {
 }
 @media (min-width: 751px) {
   .wrapper-image {
+    width: 53%;
     max-width: 547px;
     position: absolute;
-    right: 200px;
+    right: 0px;
     margin-top: 120px;
   }
 }
@@ -469,7 +530,6 @@ span {
     max-width: 100px;
     height: 25px;
     margin-top: 80px;
-    margin-right: 60px;
   }
 }
 @media (max-width: 750px) {
