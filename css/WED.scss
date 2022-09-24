@@ -203,26 +203,43 @@ span {
   }
 }
 .business__list {
-  margin-right: calc(80% - 50vw);
-  margin-left: calc(80% - 50vw);
-  display: flex;
+  @include pc {
+    margin-right: calc(80% - 50vw);
+    margin-left: calc(80% - 50vw);
+    display: flex;
+  }
 }
 .flex-left {
-  width: 48%;
-  margin-right: 64px;
-  margin-top: 150px;
+  @include pc {
+    width: 48%;
+    margin-right: 64px;
+    margin-top: 150px;
+  }
+  @include sp {
+    margin-top: 60px;
+  }
 }
 .flex-right {
-  margin-top: 50px;
-  width: 48%;
+  @include pc {
+    margin-top: 50px;
+    width: 48%;
+  }
 }
 .sec-name {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
 }
+.sec-image {
+  @include sp {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
 .sec-image:not(:last-child) {
-  margin-bottom: 50px;
+  @include pc {
+    margin-bottom: 50px;
+  }
 }
 .COMPANY__wrapper {
   margin-top: 120px;
