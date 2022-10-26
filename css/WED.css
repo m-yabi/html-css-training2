@@ -207,7 +207,7 @@ input {
 
 input,
 textarea {
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   margin-bottom: 30px;
   padding-left: 10px;
@@ -312,7 +312,6 @@ span {
 
 @media (min-width: 751px) {
   .ABOUT__wrapper {
-    max-width: 1400px;
     margin-right: calc(50% - 50vw);
     margin-left: calc(50% - 50vw);
   }
@@ -326,6 +325,8 @@ span {
 @media (min-width: 751px) {
   .ABOUT__flex {
     display: flex;
+    max-width: 1400px;
+    margin: auto;
   }
 }
 
